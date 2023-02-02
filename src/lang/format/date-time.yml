@@ -1,0 +1,125 @@
+en-US:
+  short:
+    year: numeric
+    month: short
+    day: numeric
+  long:
+    year: numeric
+    month: short
+    day: numeric
+    weekday: short
+    hour: numeric
+    minute: numeric
+    hour12: true
+
+ru:
+  short:
+    year: numeric
+    month: short
+    day: numeric
+  long:
+    year: numeric
+    month: short
+    day: numeric
+    weekday: short
+    hour: numeric
+    minute: numeric
+    hour12: false
+
+fi:
+  short:
+    year: numeric
+    month: short
+    day: numeric
+  long:
+    year: numeric
+    month: short
+    day: numeric
+    weekday: short
+    hour: numeric
+    minute: numeric
+    hour12: false
+
+cs:
+  short:
+    year: numeric
+    month: short
+    day: numeric
+  long:
+    year: numeric
+    month: short
+    day: numeric
+    weekday: short
+    hour: numeric
+    minute: numeric
+    hour12: false
+
+de:
+  short:
+    year: numeric
+    month: short
+    day: numeric
+  long:
+    year: numeric
+    month: short
+    day: numeric
+    weekday: short
+    hour: numeric
+    minute: numeric
+    hour12: false
+
+fr:
+  short:
+    year: numeric
+    month: short
+    day: numeric
+  long:
+    year: numeric
+    month: short
+    day: numeric
+    weekday: short
+    hour: numeric
+    minute: numeric
+    hour12: false
+
+it:
+  short:
+    year: numeric
+    month: short
+    day: numeric
+  long:
+    year: numeric
+    month: short
+    day: numeric
+    weekday: short
+    hour: numeric
+    minute: numeric
+    hour12: false
+
+nl:
+  short:
+    year: numeric
+    month: short
+    day: numeric
+  long:
+    year: numeric
+    month: short
+    day: numeric
+    weekday: short
+    hour: numeric
+    minute: numeric
+    hour12: false
+
+zh-CN:
+  short:
+    year: numeric
+    month: short
+    day: numeric
+  long:
+    year: numeric
+    month: short
+    day: numeric
+    weekday: short
+    hour: numeric
+    minute: numeric
+    hour12: true

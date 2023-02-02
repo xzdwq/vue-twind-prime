@@ -1,0 +1,15 @@
+node_modules
+dist
+.vscode
+
+docker/**/*
+docker
+!docker/production/nginx.conf
+.dockerignore
+
+.git
+.gitignore
+
+.editorconfig
+
+README.md

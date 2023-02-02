@@ -1,0 +1,38 @@
+/* Default. Light theme colors */
+:root {
+  --primary: #fff;
+  --accent: #dce4ea;
+  --secondary: #f1f5f9;
+  --tertiary: #58677d;
+  --quaternary: #18212f;
+  --positive: #21ba45;
+  --negative: #c10015;
+  --info: #31ccec;
+  --warning: #f2c037;
+}
+
+/* Dark theme colors */
+.dark {
+  --primary: #1b253b;
+  --accent: #1b2334;
+  --secondary: #1e293b;
+  --tertiary: #b7c0ca;
+  --quaternary: #fff;
+  --positive: #21ba45;
+  --negative: #c10015;
+  --info: #31ccec;
+  --warning: #f2c037;
+}
+
+/* Brand theme colors */
+.brand {
+  --primary: #c8bbff;
+  --accent: #caff42;
+  --secondary: #034f67;
+  --tertiary: #9289bb;
+  --quaternary: #64cb7c;
+  --positive: #21ba45;
+  --negative: #c10015;
+  --info: #31ccec;
+  --warning: #f2c037;
+}
