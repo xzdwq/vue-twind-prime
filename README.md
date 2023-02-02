@@ -15,6 +15,10 @@
 
 - `npm run dev` (`http://localhost:4444`)
 
+### О проекте
+
+- Используется `primevue ui-kit` с кастомной темой `nano`
+
 ### Docker
 
 Docker использует nginx, поэтому если необходимо изменить порт который будет слушать Docker в nginx, то:
