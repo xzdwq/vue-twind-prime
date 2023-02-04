@@ -74,7 +74,6 @@ declare module '@vue/runtime-core' {
     LastPageLink: typeof import('./../node_modules/primevue/paginator/LastPageLink.vue')['default']
     Listbox: typeof import('./../node_modules/primevue/listbox/Listbox.vue')['default']
     ListItem: typeof import('./components/demo-cmp/list-item.vue')['default']
-    ListItemErroe: typeof import('./components/demo-cmp/list-item-erroe.vue')['default']
     ListItemError: typeof import('./components/demo-cmp/list-item-error.vue')['default']
     MegaMenu: typeof import('./../node_modules/primevue/megamenu/MegaMenu.vue')['default']
     MegaMenuSub: typeof import('./../node_modules/primevue/megamenu/MegaMenuSub.vue')['default']

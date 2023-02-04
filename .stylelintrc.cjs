@@ -36,6 +36,8 @@ module.exports = {
     'rule-empty-line-before': 'never',
     'block-no-empty': true,
     'block-closing-brace-empty-line-before': 'never',
+    'scss/dollar-variable-pattern': /[a-z][a-zA-Z]+/,
+    'selector-class-pattern': /[a-z][a-zA-Z]+/,
   },
   overrides: [
     {
