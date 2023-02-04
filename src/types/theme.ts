@@ -1,7 +1,9 @@
 export interface IThemeList {
   className: string;
   label: string;
-  icon: string;
+  iconClass: string;
+  class?: string | null | (() => unknown);
+  command?: () => unknown;
 }
 
 export enum EThemeScheme {
