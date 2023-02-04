@@ -1,7 +1,7 @@
 $negative: var(--negative);
 $color_2: #697077;
 $color_3: #343a3f;
-$color_4: #fff;
+$color_4: var(--quaternary);
 $color_5: #878d96;
 $color_6: var(--tertiary);
 $color_7: #e74c3c;
@@ -441,8 +441,8 @@ $button_border-radius: 0;
 }
 .p-datepicker {
   padding: .25rem;
-  background: #fff;
-  color: $color_3;
+  background: var(--secondary);
+  color: var(--quaternary);
   border: 1px solid #a5acb3;
   border-radius: 1px;
   &:not(.p-datepicker-inline) {
@@ -455,8 +455,8 @@ $button_border-radius: 0;
   }
   .p-datepicker-header {
     padding: .5rem;
-    color: $color_3;
-    background: #fff;
+    color: var(--quaternary);
+    background: var(--secondary);
     font-weight: 600;
     margin: 0;
     border-bottom: 1px solid #dee2e6;
@@ -507,7 +507,7 @@ $button_border-radius: 0;
     .p-datepicker-title {
       line-height: 1rem;
       .p-datepicker-year {
-        color: $color_3;
+        color: var(--quaternary);
         transition: background-color .2s, color .2s, box-shadow .2s;
         font-weight: 600;
         padding: .5rem;
@@ -518,7 +518,7 @@ $button_border-radius: 0;
         }
       }
       .p-datepicker-month {
-        color: $color_3;
+        color: var(--quaternary);
         transition: background-color .2s, color .2s, box-shadow .2s;
         font-weight: 600;
         padding: .5rem;
@@ -2118,20 +2118,20 @@ input::placeholder {
 }
 .p-button {
   color: $color_4;
-  background: #1174c0;
-  border: 1px solid #1174c0;
+  background: var(--primary);
+  border: 1px solid $color_4;
   padding: .25rem .5rem;
   font-size: 1rem;
   transition: background-color .2s, color .2s, border-color .2s, box-shadow .2s;
   border-radius: $button_border-radius;
   &:enabled {
     &:hover {
-      background: #0f68ad;
+      background: var(--tertiary);
       color: $color_4;
       border-color: $border-color_8;
     }
     &:active {
-      background: #0e5d9a;
+      background: var(--secondary);
       color: $color_4;
       border-color: $border-color_5;
     }
@@ -2139,7 +2139,7 @@ input::placeholder {
   &:focus {
     outline: 0 none;
     outline-offset: 0;
-    box-shadow: 0 0 0 .2rem #90c9f5;
+    box-shadow: 0 0 0 .2rem var(--secondary);
   }
   .p-button-label {
     transition-duration: .2s;

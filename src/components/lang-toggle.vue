@@ -14,10 +14,12 @@
 </template>
 
 <script setup lang="ts">
+import { usePrimeVue } from 'primevue/config';
 import availableLanguages from '~/lang/available-languages.yml';
 import { ILocalesList } from '~/types/locales';
 
 const { locale } = useI18n();
+const primevue = usePrimeVue();
 
 const langMenu = ref();
 
@@ -41,8 +43,18 @@ const localesList: ILocalesList[] = availableLocales.map((item: string) => {
   };
 });
 
+const setLangPrime = async(): Promise<void> => {
+  try {
+    const { default: primeLangs } = await import(`../lang/prime/${state.value}.mjs`);
+    primevue.config.locale = primeLangs;
+  } catch (err: unknown) {
+    console.warn(`Prime set language "${state.value}": `, err);
+  }
+};
+
 onMounted(async() => {
   await setLanguage(state.value);
+  await setLangPrime();
 });
 
 const toggleLocales = async(item: string | null = null): Promise<void> => {
@@ -50,6 +62,7 @@ const toggleLocales = async(item: string | null = null): Promise<void> => {
   if (item) state.value = item;
   locale.value = state.value;
   await setLanguage(state.value);
+  await setLangPrime();
 };
 
 const currentLangFlag = computed<string>(

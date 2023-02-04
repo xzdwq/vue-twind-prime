@@ -10,7 +10,7 @@ export const preflight = css({
   },
   '[id=app]': {
     background: 'theme(colors.secondary)',
-    '@apply': 'h-full text-2xl leading-none',
+    '@apply': 'h-full text-2xl leading-tight',
   },
   button: {
     '@apply': 'border-none m-0 p-0 decoration-0 cursor-pointer font-base rounded inline-flex items-center text-base focus:outline-btn',

@@ -3,13 +3,19 @@
     <div class="flex justify-center items-center pt-4 font-semibold text(lg tertiary)">Vue 3 Vite TS Twind</div>
     <div class="flex justify-center items-center pt-4">{{ d(new Date(), 'long') }} - {{ n(100, 'currency') }}</div>
     <div class="flex justify-center items-center pt-4 font-semibold text(lg tertiary)">
-      <q-btn color="primary" text-color="tertiary" label="Add data" icon="add" />
+      <Button>
+        <i data-icon="add" />
+        <span>Add data</span>
+      </Button>
       <i data-icon="settings" />
       <i data-icon="settings" class="filled" />
     </div>
-    <div class="q-pa-md flex justify-center items-center h-full">
-      <div class="q-gutter-md row items-start">
-        <q-date v-model="date" today-btn landscape first-day-of-week="1" color="tertiary" text-color="quaternary" />
+    <div class="q-pa-md flex justify-center items-center h-full pt-2">
+      <div>
+        <div class="flex justify-center items-center">{{ d(date, 'short') }}</div>
+        <div class="q-gutter-md row items-start">
+          <Calendar v-model="date" inline show-week />
+        </div>
       </div>
     </div>
     <div class="flex justify-center items-center h-full">
@@ -31,7 +37,7 @@
 import ErrorBoundary from 'vue-error-boundary';
 const { d, n } = useI18n();
 
-const date = ref<string>('2019/02/01');
+const date = ref<Date>(new Date());
 
 const demoList = [
   {

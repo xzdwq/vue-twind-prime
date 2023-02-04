@@ -29,6 +29,7 @@ declare global {
   const defineComponent: typeof import('vue')['defineComponent']
   const eagerComputed: typeof import('@vueuse/core')['eagerComputed']
   const effectScope: typeof import('vue')['effectScope']
+  const enUS: typeof import('./lang/prime/en-US.mjs')['default']
   const extendRef: typeof import('@vueuse/core')['extendRef']
   const fontFamily: typeof import('./styles/twind/theme')['fontFamily']
   const getCurrentInstance: typeof import('vue')['getCurrentInstance']
@@ -85,6 +86,7 @@ declare global {
   const resolveRef: typeof import('@vueuse/core')['resolveRef']
   const resolveUnref: typeof import('@vueuse/core')['resolveUnref']
   const router: typeof import('./router')['router']
+  const ru: typeof import('./lang/prime/ru.mjs')['default']
   const rules: typeof import('./styles/twind/rules')['rules']
   const setLanguage: typeof import('./lang/set-language')['setLanguage']
   const shallowReactive: typeof import('vue')['shallowReactive']
@@ -309,6 +311,7 @@ declare module 'vue' {
     readonly defineComponent: UnwrapRef<typeof import('vue')['defineComponent']>
     readonly eagerComputed: UnwrapRef<typeof import('@vueuse/core')['eagerComputed']>
     readonly effectScope: UnwrapRef<typeof import('vue')['effectScope']>
+    readonly enUS: UnwrapRef<typeof import('./lang/prime/en-US.mjs')['default']>
     readonly extendRef: UnwrapRef<typeof import('@vueuse/core')['extendRef']>
     readonly fontFamily: UnwrapRef<typeof import('./styles/twind/theme')['fontFamily']>
     readonly getCurrentInstance: UnwrapRef<typeof import('vue')['getCurrentInstance']>
@@ -365,6 +368,7 @@ declare module 'vue' {
     readonly resolveRef: UnwrapRef<typeof import('@vueuse/core')['resolveRef']>
     readonly resolveUnref: UnwrapRef<typeof import('@vueuse/core')['resolveUnref']>
     readonly router: UnwrapRef<typeof import('./router')['router']>
+    readonly ru: UnwrapRef<typeof import('./lang/prime/ru.mjs')['default']>
     readonly rules: UnwrapRef<typeof import('./styles/twind/rules')['rules']>
     readonly setLanguage: UnwrapRef<typeof import('./lang/set-language')['setLanguage']>
     readonly shallowReactive: UnwrapRef<typeof import('vue')['shallowReactive']>
