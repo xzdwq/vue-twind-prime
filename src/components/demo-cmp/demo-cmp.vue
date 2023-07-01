@@ -10,10 +10,10 @@
       <i data-icon="settings" />
       <i data-icon="settings" class="filled" />
     </div>
-    <div class="q-pa-md flex justify-center items-center h-full pt-2">
+    <div class="flex justify-center items-center h-full pt-2">
       <div>
         <div class="flex justify-center items-center">{{ d(date, 'short') }}</div>
-        <div class="q-gutter-md row items-start">
+        <div class="items-start">
           <Calendar v-model="date" inline show-week />
         </div>
       </div>
@@ -21,7 +21,7 @@
     <div class="flex justify-center items-center h-full">
       <div class="[&>*]:(my-2)">
         <div v-for="item in demoList" :key="item.fontName">
-          <error-boundary :key ="item.fontName" stop-propagation>
+          <error-boundary :key="item.fontName" stop-propagation>
             <template #boundary="{ hasError, info, error }">
               <list-item v-if="!hasError" :name="item.name" :font-name="item.fontName" />
               <list-item-error v-else :info="info" :error-msg="error" />
@@ -40,6 +40,10 @@ const { d, n } = useI18n();
 const date = ref<Date>(new Date());
 
 const demoList = [
+  {
+    name: 'Noto Sans',
+    fontName: 'notosans',
+  },
   {
     name: 'Montserrat',
     fontName: 'montserrat',

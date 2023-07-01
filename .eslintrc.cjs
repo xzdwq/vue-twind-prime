@@ -53,9 +53,12 @@ module.exports = {
     '@typescript-eslint/strict-boolean-expressions': 'off',
     '@typescript-eslint/no-unused-vars': 1,
     'vue/require-default-prop': 1,
-    'vue/no-unused-vars': ['warn', {
-      'ignorePattern': '^_',
-    }],
+    'vue/no-unused-vars': [
+      'warn',
+      {
+        ignorePattern: '^_',
+      },
+    ],
     'vue/html-indent': [
       2,
       2,
@@ -119,7 +122,7 @@ module.exports = {
       },
     ],
     'jsdoc/check-syntax': 'error',
-    'jsdoc/newline-after-description': 'error',
+    'jsdoc/newline-after-description': 'off',
     'jsdoc/require-hyphen-before-param-description': ['error', 'always'],
     'jsdoc/tag-lines': 'off',
     'jsdoc/check-examples': 'off',

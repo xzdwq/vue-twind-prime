@@ -4,8 +4,9 @@ import * as twindColors from 'twind/colors';
  * Font Family
  */
 export const fontFamily = {
-  base: 'Montserrat, Segoe UI, sans-serif, -apple-system, Arial',
+  base: 'Noto Sans, Montserrat, Segoe UI, sans-serif, -apple-system, Arial',
   'segoe-ui': 'Segoe UI',
+  notosans: 'Noto Sans',
   montserrat: 'Montserrat',
   benzin: 'Benzin',
   // https://marella.me/material-icons/demo/
@@ -26,5 +27,5 @@ export const colors = {
   positive: 'var(--positive)',
   negative: 'var(--negative)',
   info: 'var(--info)',
-  warning:'var(--warning)',
+  warning: 'var(--warning)',
 };

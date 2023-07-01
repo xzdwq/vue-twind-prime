@@ -13,7 +13,7 @@ export const preflight = css({
     '@apply': 'h-full text-2xl leading-tight',
   },
   button: {
-    '@apply': 'border-none m-0 p-0 decoration-0 cursor-pointer font-base rounded inline-flex items-center text-base focus:outline-btn',
+    '@apply': 'border-none m-0 p-0 decoration-0 cursor-pointer font-base rounded inline-flex items-center text-base',
   },
   i: {
     fontWeight: 'normal',
@@ -30,4 +30,3 @@ export const preflight = css({
     '&::after': { content: 'attr(data-icon)' },
   },
 });
-

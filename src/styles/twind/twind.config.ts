@@ -11,10 +11,8 @@ import { rules } from '~/styles/twind/rules';
 
 install(
   defineConfig({
-    presets: [
-      presetAutoprefix(),
-      presetTailwind(),
-    ],
+    ignorelist: [/^p-*/i],
+    presets: [presetAutoprefix(), presetTailwind()],
     darkMode: 'class',
     hash: (className: string) => className,
     theme: {

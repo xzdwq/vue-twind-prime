@@ -1,5 +1,5 @@
 <template>
-  <Button class="p-button-text" @click="next()">
+  <Button class="p-button-text" @click="toggleTheme()">
     <i :data-icon="icon" />
   </Button>
   <Button icon="pi pi-angle-down" class="p-button-text" @click="showTieredMenu" />
@@ -14,7 +14,7 @@
 </template>
 
 <script setup lang="ts">
-import { IThemeList } from '~/types/theme';
+import { type IThemeList } from '~/types/theme';
 
 const { t } = useI18n();
 
@@ -30,25 +30,39 @@ const mode = useColorMode<string>({
   },
 });
 
-const themeList: IThemeList[] = (Object.keys(EThemeScheme) as (keyof typeof EThemeScheme)[]).map((item: string) => {
+const themeList: IThemeList[] = (Object.keys(EThemeScheme) as Array<keyof typeof EThemeScheme>).map((item: string) => {
   const needleName = item.toLocaleLowerCase();
   return {
     className: needleName,
     label: `theme.${needleName}`,
     iconClass:
-      needleName === EThemeScheme.AUTO ? 'brightness_4' :
-      needleName === EThemeScheme.LIGHT ? 'wb_sunny' :
-      needleName === EThemeScheme.DARK ? 'mode_night' :
-      needleName === EThemeScheme.BRAND ? 'cruelty_free' : 'auto_fix_hight',
-    class: () => { return mode.value === needleName ? 'bg-primary text-white' : null },
-    command: () => { mode.value = needleName },
+      needleName === EThemeScheme.AUTO
+        ? 'brightness_4'
+        : needleName === EThemeScheme.LIGHT
+          ? 'wb_sunny'
+          : needleName === EThemeScheme.DARK
+            ? 'mode_night'
+            : needleName === EThemeScheme.BRAND
+              ? 'cruelty_free'
+              : 'auto_fix_hight',
+    class: () => {
+      return mode.value === needleName ? 'bg-primary text-white' : null;
+    },
+    command: () => {
+      mode.value = needleName;
+    },
   };
 });
 
-const { next } = useCycleList(
+const { next, state } = useCycleList(
   themeList.map((i: IThemeList) => i.className),
   { initialValue: mode },
 );
+
+const toggleTheme = (): void => {
+  next();
+  mode.value = state.value;
+};
 
 const icon = computed<string>(() => themeList.find((i) => i.className === mode.value)?.iconClass ?? 'auto_fix_hight');
 </script>
