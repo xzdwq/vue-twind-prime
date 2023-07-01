@@ -9,20 +9,12 @@ module.exports = {
   ],
   plugins: ['stylelint-scss'],
   rules: {
-    indentation: [
-      2,
-      {
-        baseIndentLevel: 0,
-      },
-    ],
-    'declaration-block-semicolon-newline-after': 'always',
     'selector-pseudo-element-no-unknown': [
       true,
       {
         ignorePseudoElements: ['v-deep'],
       },
     ],
-    'number-leading-zero': 'never',
     'no-descending-specificity': null,
     'font-family-no-missing-generic-family-keyword': null,
     'selector-type-no-unknown': null,
@@ -35,9 +27,9 @@ module.exports = {
     'no-empty-source': true,
     'rule-empty-line-before': 'never',
     'block-no-empty': true,
-    'block-closing-brace-empty-line-before': 'never',
     'scss/dollar-variable-pattern': /[a-z][a-zA-Z]+/,
     'selector-class-pattern': /[a-z][a-zA-Z]+/,
+    'media-feature-range-notation': 'prefix',
   },
   overrides: [
     {

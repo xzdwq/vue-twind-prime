@@ -58,8 +58,8 @@ export default defineConfig({
         index: path.resolve(__dirname, 'index.html'),
       },
       output: {
-        entryFileNames: '[name].[hash].entry.js',
-        chunkFileNames: '[name].[hash].js',
+        entryFileNames: 'js/[name].[hash].entry.js',
+        chunkFileNames: 'js/[name].[hash].js',
         assetFileNames: ({ name }) => {
           let extPath = '[ext]';
           if (/\.(gif|jpe?g|png|svg|tiff|bmp|ico)$/.test(name ?? '')) {

@@ -11,7 +11,7 @@
 const { t } = useI18n();
 
 defineProps<{
-  info: string,
-  errorMsg: Error,
+  info: string;
+  errorMsg: Error;
 }>();
 </script>

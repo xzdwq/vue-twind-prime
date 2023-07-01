@@ -73,7 +73,7 @@ module.exports = {
         baseIndent: 0,
       },
     ],
-    'space-before-function-paren': ['error', 'never'],
+    'space-before-function-paren': ['error', 'always'],
     '@typescript-eslint/naming-convention': [
       'error',
       {
@@ -147,6 +147,7 @@ module.exports = {
         '@typescript-eslint/triple-slash-reference': 'off',
         '@typescript-eslint/indent': 1,
         '@typescript-eslint/explicit-function-return-type': ['error'],
+        'space-before-function-paren': ['error', 'never'],
       },
     },
     {
@@ -158,6 +159,7 @@ module.exports = {
         '@typescript-eslint/restrict-plus-operands': 'off',
         '@typescript-eslint/typedef': 'off',
         'import/no-nodejs-modules': 'off',
+        'space-before-function-paren': ['error', 'never'],
       },
     },
   ],

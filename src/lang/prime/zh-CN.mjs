@@ -1,4 +1,3 @@
-
 export default {
   startsWith: '开始于',
   contains: '包含',
@@ -114,4 +113,4 @@ export default {
     rotateRight: '向右旋转',
     rotateLeft: '向左旋转',
   },
-}
+};

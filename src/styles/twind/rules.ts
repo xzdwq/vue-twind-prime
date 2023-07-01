@@ -1,16 +1,13 @@
-import { BaseTheme, Rule, apply, css } from '@twind/core';
+import { apply, css, type BaseTheme, type Rule } from '@twind/core';
 
-export const rules: Array<Rule<BaseTheme & { extend: never; }>> = [
+export const rules: Array<Rule<BaseTheme & { extend: never }>> = [
   [
     'filled',
     css`
       font-family: theme(fontFamily.material-filled);
     `,
   ],
-  [
-    'light',
-    `bg-primary`,
-  ],
+  ['light', `bg-primary`],
   [
     'dark',
     css`

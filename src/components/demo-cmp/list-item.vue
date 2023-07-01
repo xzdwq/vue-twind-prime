@@ -15,8 +15,8 @@
 const { t } = useI18n();
 
 defineProps<{
-  name: string,
-  fontName: string,
+  name: string;
+  fontName: string;
 }>();
 
 const isRenderSuccessfully = (name: string): boolean => {

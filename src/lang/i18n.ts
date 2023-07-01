@@ -1,8 +1,8 @@
-import availableLanguages from './available-languages.yml';
 import { createI18n } from 'vue-i18n';
+import type availableLanguages from './available-languages.yml';
 import datetimeFormats from './format/date-time.yml';
-import enUS from './translation/en-US.yml';
 import numberFormats from './format/number.yml';
+import enUS from './translation/en-US.yml';
 
 export const i18n = createI18n({
   legacy: false,

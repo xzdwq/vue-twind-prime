@@ -16,7 +16,7 @@
 <script setup lang="ts">
 import { usePrimeVue } from 'primevue/config';
 import availableLanguages from '~/lang/available-languages.yml';
-import { ILocalesList } from '~/types/locales';
+import { type ILocalesList } from '~/types/locales';
 
 const { locale } = useI18n();
 const primevue = usePrimeVue();
@@ -27,8 +27,7 @@ const showTieredMenu = (e: Event): void => langMenu.value.toggle(e);
 
 const storageLocale = useStorage('locale', locale);
 const availableLocales = Object.entries(availableLanguages).map(([key]) => key);
-const getFlagPath = (langCode: string): string =>
-  new URL(`../assets/img/flags/${langCode}.png`, import.meta.url).href;
+const getFlagPath = (langCode: string): string => new URL(`../assets/img/flags/${langCode}.png`, import.meta.url).href;
 
 const { next, state } = useCycleList(availableLocales);
 state.value = storageLocale.value;
@@ -38,12 +37,12 @@ const localesList: ILocalesList[] = availableLocales.map((item: string) => {
     label: availableLanguages[item],
     code: item,
     img: getFlagPath(item),
-    class: () => state.value === item ? 'bg-primary text-white' : null,
+    class: () => (state.value === item ? 'bg-primary text-white' : null),
     command: () => toggleLocales(item),
   };
 });
 
-const setLangPrime = async(): Promise<void> => {
+const setLangPrime = async (): Promise<void> => {
   try {
     const { default: primeLangs } = await import(`../lang/prime/${state.value}.mjs`);
     primevue.config.locale = primeLangs;
@@ -52,12 +51,12 @@ const setLangPrime = async(): Promise<void> => {
   }
 };
 
-onMounted(async() => {
+onMounted(async () => {
   await setLanguage(state.value);
   await setLangPrime();
 });
 
-const toggleLocales = async(item: string | null = null): Promise<void> => {
+const toggleLocales = async (item: string | null = null): Promise<void> => {
   next();
   if (item) state.value = item;
   locale.value = state.value;

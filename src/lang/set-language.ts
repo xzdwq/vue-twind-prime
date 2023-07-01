@@ -1,4 +1,4 @@
-import { Language, i18n } from './i18n';
+import { i18n, type Language } from './i18n';
 
 import availableLanguages from './available-languages.yml';
 

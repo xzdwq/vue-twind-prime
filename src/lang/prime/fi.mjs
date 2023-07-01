@@ -1,4 +1,3 @@
-
 export default {
   startsWith: 'Alkaa',
   contains: 'Sisältää',
@@ -31,8 +30,34 @@ export default {
   dayNames: ['Sunnuntai', 'Maanantai', 'Tiistai', 'Keskiviikko', 'Torstai', 'Perjantai', 'Lauantai'],
   dayNamesShort: ['Su', 'Ma', 'Ti', 'Ke', 'To', 'Pe', 'La'],
   dayNamesMin: ['Su', 'Ma', 'Ti', 'Ke', 'To', 'Pe', 'La'],
-  monthNames: ['Tammikuu', 'Helmikuu', 'Maaliskuu', 'Huhtikuu', 'toukokuu', 'Kesäkuu', 'Keinäkuu', 'Elokuu', 'Syyskuu', 'Lokakuu', 'Marraskuu', 'Joulukuu'],
-  monthNamesShort: ['Tammi', 'Helmi', 'Maaliskuu', 'Huhti', 'Toukokuu', 'Kesäkuu', 'Heinäkuu', 'Elokuu', 'Syyskuu', 'Lokakuu', 'Marraskuu', 'Joulukuu'],
+  monthNames: [
+    'Tammikuu',
+    'Helmikuu',
+    'Maaliskuu',
+    'Huhtikuu',
+    'toukokuu',
+    'Kesäkuu',
+    'Keinäkuu',
+    'Elokuu',
+    'Syyskuu',
+    'Lokakuu',
+    'Marraskuu',
+    'Joulukuu',
+  ],
+  monthNamesShort: [
+    'Tammi',
+    'Helmi',
+    'Maaliskuu',
+    'Huhti',
+    'Toukokuu',
+    'Kesäkuu',
+    'Heinäkuu',
+    'Elokuu',
+    'Syyskuu',
+    'Lokakuu',
+    'Marraskuu',
+    'Joulukuu',
+  ],
   chooseYear: 'Valitse vuosi',
   chooseMonth: 'Valitse kuukausi',
   chooseDate: 'Valitse päivämäärä',
@@ -114,4 +139,4 @@ export default {
     rotateRight: 'Pyöritä oikealle',
     rotateLeft: 'Pyöritä vasemmalle',
   },
-}
+};
