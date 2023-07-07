@@ -3,6 +3,7 @@
   src: local('Benzin-Regular'), url('~/assets/fonts/benzin/Benzin-Regular.woff') format('woff');
   font-weight: 300;
   font-style: normal;
+  font-display: auto;
 }
 
 @font-face {
@@ -10,6 +11,7 @@
   src: local('Benzin-Bold'), url('~/assets/fonts/benzin/Benzin-Bold.woff') format('woff');
   font-weight: bold;
   font-style: normal;
+  font-display: auto;
 }
 
 @font-face {
@@ -17,6 +19,7 @@
   src: local('Benzin-Semibold'), url('~/assets/fonts/benzin/Benzin-Semibold.woff') format('woff');
   font-weight: 500;
   font-style: normal;
+  font-display: auto;
 }
 
 @font-face {
@@ -24,6 +27,7 @@
   src: local('Benzin-ExtraBold'), url('~/assets/fonts/benzin/Benzin-Extra-Bold.woff') format('woff');
   font-weight: 600;
   font-style: normal;
+  font-display: auto;
 }
 
 @font-face {
@@ -31,4 +35,5 @@
   src: local('Benzin-Medium'), url('~/assets/fonts/benzin/Benzin-Medium.woff') format('woff');
   font-weight: normal;
   font-style: normal;
+  font-display: auto;
 }

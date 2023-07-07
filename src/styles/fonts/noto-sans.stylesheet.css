@@ -3,6 +3,7 @@
   font-style: normal;
   font-weight: normal;
   src: local('Noto Sans Regular'), url('~/assets/fonts/noto-sans/NotoSans-Regular.woff') format('woff');
+  font-display: swap;
 }
 
 @font-face {
@@ -10,6 +11,7 @@
   font-style: normal;
   font-weight: 300;
   src: local('Noto Sans Light'), url('~/assets/fonts/noto-sans/NotoSans-Light.woff') format('woff');
+  font-display: swap;
 }
 
 @font-face {
@@ -17,6 +19,7 @@
   font-style: italic;
   font-weight: normal;
   src: local('Noto Sans Italic'), url('~/assets/fonts/noto-sans/NotoSans-Italic.woff') format('woff');
+  font-display: swap;
 }
 
 @font-face {
@@ -24,6 +27,7 @@
   font-style: normal;
   font-weight: 800;
   src: local('Noto Sans Bold'), url('~/assets/fonts/noto-sans/NotoSans-Bold.woff') format('woff');
+  font-display: swap;
 }
 
 @font-face {
@@ -31,4 +35,5 @@
   font-style: italic;
   font-weight: 800;
   src: local('Noto Sans'), url('~/assets/fonts/noto-sans/NotoSans-BoldItalic.woff') format('woff');
+  font-display: swap;
 }
